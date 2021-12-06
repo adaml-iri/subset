@@ -1,0 +1,50 @@
+CoSort error log started: 2021-12-06 11:57:35
+
+CoSort 10.5.1 B105210811-1500 x86_64 #21237.5427
+Filename: C:\IRI\cosort105\etc\cosort.rc
+	AUTO_TUNE                ON
+	MEMORY_MAX               AUTO
+	THREAD_MIN               1
+	THREAD_MAX               1
+	BLOCKSIZE                AUTO
+	MONITOR_LEVEL            0
+	MINIMUM_YEAR             70
+	ON_EMPTY_INPUT           PROCESS_WITH_ZEROS
+	OUTPUT_TERMINATOR        INFILE
+	WORK_AREAS               1
+	  --  .\ : 0
+Initialization started... Initialization done
+Command:  /infile="SCOTT.REGIONS;DSN=Oracle-Eclipse;"
+ /process=odbc
+   /field=(REGION_ID,pos=1,sep="\	", TYPE=NUMERIC, ODEF="REGION_ID")
+   /field=(REGION_NAME,pos=2,sep="\	", ODEF="REGION_NAME")
+  /sort
+  /k
+Auto Tune - enaBuffers cleanup started... Buffers cleanup done
+
+Blocksize  Memorysize  ExtMaxMemory  RecsInMemory  Buffers    LWF
+    600kb      3451mb          40mb         512kb        2      0
+
+Resources cleanup started... Resources cleanup done
+
+CoSort error log done: 2021-12-06 11:57:36
+ buffer compressed to 0.43[ODBC][Oracle] auto commit mode = 1
+[ODBC][Oracle] parameter array size = 1024
+Auto Tune - enabled - No Sort in Memory
+checking cutback: starting memory per thread 41943040 
+cutback done, memory_max: 41943040
+    memory_perthread_max: 10485760
+       initial recsinmem: 6291456 (100663312 bytes)
+Sort operation phase1 started...
+Sort operation phase1 done
+Sort operation phase2 started...
+t0: cpus 1 f_used 0 strt 0 len 0 mcpus 1
+Sort operation phase2 done
+Buffers cleanup started... Buffers cleanup done
+
+Blocksize  Memorysize  ExtMaxMemory  RecsInMemory  Buffers    LWF
+    600kb        40mb          40mb        6144kb        2      0
+
+Resources cleanup started... Resources cleanup done
+
+CoSort error log done: 2021-12-06 11:57:36
