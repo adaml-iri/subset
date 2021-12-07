@@ -1,4 +1,4 @@
-CoSort error log started: 2021-12-06 11:57:35
+CoSort error log started: 2021-12-07 10:41:12
 
 CoSort 10.5.1 B105210811-1500 x86_64 #21237.5427
 Filename: C:\IRI\cosort105\etc\cosort.rc
@@ -23,11 +23,11 @@ Command:  /infile="SCOTT.REGIONS;DSN=Oracle-Eclipse;"
 Auto Tune - enaBuffers cleanup started... Buffers cleanup done
 
 Blocksize  Memorysize  ExtMaxMemory  RecsInMemory  Buffers    LWF
-    600kb      3451mb          40mb         512kb        2      0
+    600kb      3418mb          40mb         512kb        2      0
 
 Resources cleanup started... Resources cleanup done
 
-CoSort error log done: 2021-12-06 11:57:36
+CoSort error log done: 2021-12-07 10:41:12
  buffer compressed to 0.43[ODBC][Oracle] auto commit mode = 1
 [ODBC][Oracle] parameter array size = 1024
 Auto Tune - enabled - No Sort in Memory
@@ -47,4 +47,4 @@ Blocksize  Memorysize  ExtMaxMemory  RecsInMemory  Buffers    LWF
 
 Resources cleanup started... Resources cleanup done
 
-CoSort error log done: 2021-12-06 11:57:36
+CoSort error log done: 2021-12-07 10:41:12

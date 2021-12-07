@@ -1,0 +1,5 @@
+pipelin {
+   stage('build') {
+  	bat "C:\\Users\\adaml\\git\\repository\\sub\\new_subset.bat"
+	} 
+}
